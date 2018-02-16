@@ -1,42 +1,27 @@
-#
-# Be sure to run `pod lib lint AlertSDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'AlertSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AlertSDK.'
+  s.name         = "AlertSDK"
+  s.version      = "0.1.0"
+  s.summary      = "Alert Solution to help show alerts at any page of the app"
+  s.homepage     = "https://github.com/manishSinghthakur/AlertSDK"
+  s.author       = { "Manish Singh, Inc" => "manish.singh705@gmail.com" }
+  s.platform     = :ios
+  s.source       = { :git => "https://github.com/manishSinghthakur/AlertSDK.git", :tag => "0.1.0" }
+  s.source_files =  'AlertSDK/AlertSDK.framework/Headers/*.h'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.vendored_frameworks = 'AlertSDK/AlertSDK.framework'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.ios.deployment_target = '9.0'
 
-  s.homepage         = 'https://github.com/manishSinghthakur/AlertSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'manishSinghthakur' => 'manish.singh705@gmail.com' }
-  s.source           = { :git => 'https://github.com/manishSinghthakur/AlertSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.frameworks = 'UIKit', 'Foundation'
 
-  s.ios.deployment_target = '8.0'
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AlertSDK"',
+                   'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/AlertSDK"' }
 
-  s.source_files = 'AlertSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AlertSDK' => ['AlertSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.license      = {
+    :type => 'Copyright',
+    :text => <<-LICENSE
+      Copyright 2018 AlertSDK, Inc. All rights reserved.
+      LICENSE
+  }
+ 
 end

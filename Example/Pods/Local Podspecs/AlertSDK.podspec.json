@@ -1,0 +1,22 @@
+{
+  "name": "AlertSDK",
+  "version": "0.1.0",
+  "summary": "A short description of AlertSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/manishSinghthakur/AlertSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "manishSinghthakur": "manish.singh705@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/manishSinghthakur/AlertSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AlertSDK/Classes/**/*"
+}

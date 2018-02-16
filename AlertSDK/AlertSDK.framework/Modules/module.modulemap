@@ -1,0 +1,6 @@
+framework module AlertSDK {
+  umbrella header "AlertSDK.h"
+
+  export *
+  module * { export * }
+}
