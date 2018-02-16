@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AlertSDK_Tests' do
+  pod 'AlertSDK', :path => '../'
+  
+  
+end
